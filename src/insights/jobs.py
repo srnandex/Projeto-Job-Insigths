@@ -5,8 +5,8 @@ import csv
 
 @lru_cache
 def read(path: str) -> List[Dict]:
-  with open(path, encoding="utf8") as file:
-    return list(csv.DictReader(file))
+    with open(path, encoding="utf8") as file:
+        return list(csv.DictReader(file))
 
 
 def get_unique_job_types(path: str) -> List[str]:
